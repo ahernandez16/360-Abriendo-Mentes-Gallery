@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>360&deg; Image Gallery</title>
-    <meta name="description" content="360&deg; Image Gallery - A-Frame">
+    <title>360&deg; Abriendo Mentes Tour</title>
+    <meta name="description" content="360&deg; Abriendo Mentes Tour - A-Frame">
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
     <script src="https://npmcdn.com/aframe-animation-component@3.0.1"></script>
     <script src="https://npmcdn.com/aframe-event-set-component@3.0.1"></script>
@@ -11,30 +11,17 @@
     <script src="https://npmcdn.com/aframe-template-component@3.0.1"></script>
     <script src="components/set-image.js"></script>
     <script src="components/update-raycaster.js"></script>
-    <!-- DELETE SECTION BELOW if you forked code. This is analytics code to track popularity of content for a 
-         meetup event tracking. -->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-73311422-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    <!-- End Analytics Code. Delete section above if you plan to deploy your own application. The analytics was to help with planning of a meetup -->
   </head>
   <body>
     <a-scene>
       <a-assets>
-        <img id="kieran" src="img/1.jpg">
-        <img id="kieran-thumb" crossorigin="anonymous" src="img/kieran-thumb.png">
-        <img id="cancha-thumb" crossorigin="anonymous" src="img/cancha-thumb.png">
-        <img id="eddie-thumb" crossorigin="anonymous" src="img/eddie-thumb.png">
+        <img id="p-outside-office" src="img/1.jpg">
+        <img id="p-outisde-office-thumb" crossorigin="anonymous" src="img/p-outside-office-thumb.png">
+        <img id="p-cancha-thumb" crossorigin="anonymous" src="img/p-cancha-thumb.png">
+        <img id="p-comp-office-thumb" crossorigin="anonymous" src="img/p-comp-office-thumb.png">
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
-        <img id="cancha" crossorigin="anonymous" src="img/2.jpg">
-        <img id="eddie" crossorigin="anonymous" src="img/4.jpg">
+        <img id="p-cancha" crossorigin="anonymous" src="img/2.jpg">
+        <img id="p-comp-office" crossorigin="anonymous" src="img/p-office.JPG">
 
         <!-- Image link template to be reused. -->
         <script id="link" type="text/nunjucks">
@@ -51,13 +38,13 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#kieran"></a-sky>
+      <a-sky id="image-360" radius="10" src="#p-outside-office"></a-sky>
 
       <!-- Image links. -->
-      <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-        <a-entity template="src: #link" data-src="#cancha" data-thumb="#cancha-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#kieran" data-thumb="#kieran-thumb"></a-entity>
-        <a-entity template="src: #link" data-src="#eddie" data-thumb="#eddie-thumb"></a-entity>
+      <a-entity id="links" layout="type: line; margin: 1.5" position="-1 -3 -1" rotation="-90 0 0">
+        <a-entity template="src: #link" data-src="#p-cancha" data-thumb="#p-cancha-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#p-outside-office" data-thumb="#p-outisde-office-thumb"></a-entity>
+        <a-entity template="src: #link" data-src="#p-comp-office" data-thumb="#p-comp-office-thumb"></a-entity>
       </a-entity>
 
       <!-- Camera + cursor. -->

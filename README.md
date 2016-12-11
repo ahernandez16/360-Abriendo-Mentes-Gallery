@@ -1,12 +1,10 @@
-# RICOH THETA 360 Image Gallery Tutorial with A-Frame
+# Experimental 360 Abriendo Mentes Tour with A-Frame
 
-This is the second THETA 360 tutorial on A-Frame. The 
-[first tutorial](https://github.com/theta360developers/aframe-demo) 
-covers creating a sphere. Recommend you start with the first tutorial.
+This project uses open-source code written by [codetricity](https://github.com/codetricity/360gallery).
+You can read documentation in the article: [Build a VR web application in 15 minutes](https://opensource.com/life/16/11/build-virtual-reality-app)
+This forked project is meant to give perspective volunteers, donors, or really anyone a look inside the Abriendo Mentes offices and classrooms where we operate. To learn more about this NGO based in Costa Rica follow this link: [Abriendo Mentes](http://abriendomentes.org/)
 
-> Modified from *Building an Advanced Scene* guide of the A-Frame documentation.
-
-Scene for selecting between different 360-degree images.
+Thank you to the developer(s) for this open-source project!
 
 ## Dependencies
 
