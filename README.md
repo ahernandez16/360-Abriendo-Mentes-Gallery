@@ -12,3 +12,6 @@ Thank you to the developer(s) for this open-source project!
 - [K-Frame](https://github.com/ngokevin/k-frame)
 
 ![Analytics](https://ga-beacon.appspot.com/UA-73311422-5/360gallery)
+
+### Online demo ###
+https://ahernandez16.github.io/360gallery/
